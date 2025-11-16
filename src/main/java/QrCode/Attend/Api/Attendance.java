@@ -21,10 +21,10 @@ public class Attendance {
 	
 	@Autowired
 	AttendanceService attending;
-//	@GetMapping("Test/")
-//	public String test() {
-//		return "Testing";
-//	}
+	@GetMapping("Test/")
+	public String test() {
+		return "Testing";
+	}
 	@PostMapping("/MarkAttendance/{code}")
 	public ResponseEntity<?> markAttendance(@PathVariable String code, @RequestBody AttendanceRequestDto req) {
 	    try {
@@ -38,3 +38,4 @@ public class Attendance {
 	}
 
 }
+
